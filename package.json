@@ -2,6 +2,11 @@
   "name": "third",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "react-day-picker": {
+      "react": "^19.0.0"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "npm install --legacy-peer-deps && next build",
