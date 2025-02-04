@@ -1,0 +1,29 @@
+import Footer from "@/components/Footer";
+import { GarageDoorNavbar } from "@/components/GarageDoorNavbar";
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
+import Image from "next/image";
+
+export default function layout({ children }) {
+  return (
+    <div className="relative">
+      <div className="bg-emerald-50">
+        <div className="container mx-auto ">
+          <div className="flex justify-between items-center py-2 text-emerald-800">
+            <div className="flex items-center space-x-2">
+              <Phone size={18} />
+              <span className="font-semibold">469-909-0956</span>
+            </div>
+            <Image src="/google-review.png" alt="Logo" width={140} height={30} />
+            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">Get Free Estimate</Button>
+          </div>
+        </div>
+      </div>
+      <div className="sticky top-0 z-[999]">
+        <GarageDoorNavbar />
+      </div>
+      {children}
+      <Footer />
+    </div>
+  );
+}
