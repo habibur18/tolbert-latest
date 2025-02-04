@@ -4,7 +4,8 @@
   "private": true,
   "overrides": {
     "react-day-picker": {
-      "react": "^19.0.0"
+      "react": "^19.0.0",
+      "date-fns": "^3.6.0"
     }
   },
   "scripts": {
