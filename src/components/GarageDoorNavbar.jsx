@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 const services = [
   {
-    title: "Installation",
+    title: "Garage Door Installation",
     description: "Professional garage door installation services",
     image: "/installation.png",
     href: "/garage-door-installation",

@@ -60,7 +60,7 @@ export function AwesomeSpringComparison() {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="p-8">
                 <div className="relative mb-10 rounded-xl overflow-hidden shadow-lg">
-                  <img alt="Garage Door Springs" className="w-full h-auto object-cover" src={`${selectedOption === "single" ? "https://i.ibb.co.com/sv4WS5dX/0-YOLvh-e-HQ-4vo-D-O.jpg" : "https://sc04.alicdn.com/kf/Hda6fe31b25fe4e1caa62db820d0c32f6Q.png"}`} />
+                  <img alt="Garage Door Springs" className="w-full h-auto object-cover" src={`${selectedOption === "single" ? "/single-spring.jpg" : "/double-spring.png"}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-6 left-6 text-white">
                     <h3 className="text-2xl font-bold mb-2">{selectedOption === "single" ? "Single Spring" : "Pair of Springs"}</h3>
