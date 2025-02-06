@@ -36,9 +36,9 @@ const products = [
   { title: "Screens", image: "/Screens.png", href: "/garage-door-screen" },
   { title: "Gates", image: "/Gates.png", href: "/garage-door-gate" },
   { title: "Commercial Doors", image: "/Commercial Doors.png", href: "/garage-door-commercial" },
-  { title: "Parts", image: "/Parts.png", href: "/garage-door-parts" },
-  { title: "Storage Units", image: "/Storage Units.png", href: "/storage-unit" },
-  { title: "Storage Bin Racks", image: "/Storage Bin Racks.png", href: "/storage-bin-rack" },
+  { title: "Parts", image: "/Parts.png", href: "/garage-door-spring" },
+  { title: "Storage Units", image: "/Storage Units.png", href: "/storage-unit-doors-repair" },
+  { title: "Storage Bin Racks", image: "/Storage Bin Racks.png", href: "/storage-bin-racks" },
 ];
 
 const moreItems = [
@@ -73,7 +73,7 @@ export function GarageDoorNavbar() {
               </NavigationMenuItem>
               <div className="flex items-center space-x-4">
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-lg">Services</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="text-lg">Door Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                       {services.map((service) => (
@@ -88,7 +88,7 @@ export function GarageDoorNavbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-lg">Products</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="text-lg">Products & Accessories</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="flex w-[800px] p-4">
                       <div className="w-1/4 pr-4 border-r">
