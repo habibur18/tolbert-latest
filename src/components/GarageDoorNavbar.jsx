@@ -30,7 +30,7 @@ const services = [
 ];
 
 const products = [
-  { title: "Openers", image: "/Openers.png", href: "/garage-door-opener" },
+  { title: "Openers", image: "/Openers.png", href: "/garage-door-openers" },
   { title: "Doors", image: "/Doors.png", href: "/garage-door" },
   { title: "Spring", image: "/Springs.png", href: "/garage-door-spring" },
   { title: "Screens", image: "/Screens.png", href: "/garage-door-screen" },
