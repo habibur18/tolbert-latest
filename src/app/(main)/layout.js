@@ -3,6 +3,7 @@ import { GarageDoorNavbar } from "@/components/GarageDoorNavbar";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function layout({ children }) {
   return (
@@ -14,7 +15,9 @@ export default function layout({ children }) {
               <Phone size={18} />
               <span className="font-semibold">469-909-0956</span>
             </div>
-            <Image src="/google-review.png" alt="Logo" width={140} height={30} />
+            <Link href="/https://g.page/r/CQSjwAoMVaEHEBM/review">
+              <Image src="/google-review.png" alt="Logo" width={140} height={30} />
+            </Link>
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">Get Free Estimate</Button>
           </div>
         </div>
