@@ -15,7 +15,7 @@ export default function layout({ children }) {
               <Phone size={18} />
               <span className="font-semibold">469-909-0956</span>
             </div>
-            <Link href="/https://g.page/r/CQSjwAoMVaEHEBM/review">
+            <Link target="_blank" href="https://g.page/r/CQSjwAoMVaEHEBM/review">
               <Image src="/google-review.png" alt="Logo" width={140} height={30} />
             </Link>
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">Get Free Estimate</Button>

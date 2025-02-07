@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Professional Garage Door Installation Services | Fast & Affordable | Tolbert Garage Door",
-  description: "Expert garage door installation, maintenance, and repair services. Licensed and insured professionals, 100% satisfaction guaranteed. Get your free quote today!",
+  description: "Expert garage door installation in Dallas, TX, maintenance, and repair services. Licensed and insured professionals, 100% satisfaction guaranteed. Get your free quote today!",
   keywords: "garage door installation, garage door repair, door maintenance, panel replacement, spring replacement, hardware parts, tolbert garage door repair",
   openGraph: {
     title: "Professional Garage Door Installation Services | Fast & Affordable",
