@@ -96,7 +96,7 @@ import { ServiceBadges } from "./service-badges";
 
 export default function HeroSection() {
   return (
-    <main className="">
+    <main className=" ">
       <div
         className="relative"
         style={{
@@ -112,7 +112,7 @@ export default function HeroSection() {
           backgroundPosition: "center",
         }}
       >
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 py-36 min-h-[60vh]">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column */}
             <div className="space-y-8">

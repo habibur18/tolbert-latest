@@ -20,7 +20,7 @@ export function ServiceBadges() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+    <div className="flex flex-wrap gap-8 max-w-3xl mx-auto">
       {badges.map((badge) => (
         <div key={badge.title} className="flex flex-col items-center text-center">
           <div className=" mb-4">

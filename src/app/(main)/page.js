@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="my-8">
+      <div className="mb-8">
         <HeroSection />
       </div>
       <main className="relative">
