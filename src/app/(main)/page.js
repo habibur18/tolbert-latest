@@ -20,7 +20,7 @@ export const metadata = {
     description: "Dallas’s most trusted garage door repair and installation experts. We provide fast, reliable service for residential and commercial garage doors. Get fast same-day service and free estimates. Contact us now!",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2PB3b1UQtgKTWMxGNELYKgDZuplZbv.png",
+        url: "/HomeopenGraph.png",
         width: 1200,
         height: 630,
         alt: "Tolbert Garage Door Repair - Best Garage Door Service in Dallas",
