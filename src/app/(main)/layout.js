@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import { GarageDoorNavbar } from "@/components/GarageDoorNavbar";
 import { Button } from "@/components/ui/button";
+import { ConfettiProvider } from "@/context/confetti-context";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +26,7 @@ export default function layout({ children }) {
       <div className="sticky top-0 z-[999]">
         <GarageDoorNavbar />
       </div>
-      {children}
+      <ConfettiProvider>{children}</ConfettiProvider>
       <Footer />
     </div>
   );

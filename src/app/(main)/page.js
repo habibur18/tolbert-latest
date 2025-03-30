@@ -1,6 +1,5 @@
 import AboutusSection from "@/components/AboutusSection";
 import CategoryMain from "@/components/CategoryMain";
-import { ContactForm } from "@/components/contact-form";
 import FooterContactForm from "@/components/FooterContactForm";
 import HeroSection from "@/components/HeroSection";
 import LargeNewsVideo from "@/components/LargeNewsVideo";
@@ -64,8 +63,6 @@ export default function Home() {
           <ServiceLocations />
         </div>
         <TeamSection />
-        <div className="mt-8"></div>
-        <ContactForm />
 
         <div className="my-8">
           <AboutusSection />
