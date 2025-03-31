@@ -109,3 +109,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .clip-path-slant-left {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .clip-path-curve {
+    clip-path: ellipse(50% 50% at 50% 100%);
+  }
+}

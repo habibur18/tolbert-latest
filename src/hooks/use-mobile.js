@@ -8,7 +8,7 @@ export function useMobile() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(width < 768); // Adjust the breakpoint as needed
+    setIsMobile(width < 768);
   }, [width]);
 
   return isMobile;

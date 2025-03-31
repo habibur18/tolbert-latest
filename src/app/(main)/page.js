@@ -3,10 +3,10 @@ import CategoryMain from "@/components/CategoryMain";
 import FooterContactForm from "@/components/FooterContactForm";
 import HeroSection from "@/components/HeroSection";
 import LargeNewsVideo from "@/components/LargeNewsVideo";
+import WelcomeSection from "@/components/main/homepage/WelcomeSection";
 import ServiceLocations from "@/components/service-locations";
 import TeamSection from "@/components/TeamSection";
 import TestimonialSection from "@/components/testimonials";
-import WelcomeSection from "@/components/WelcomeSection";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import Link from "next/link";
 

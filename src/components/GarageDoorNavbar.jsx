@@ -105,12 +105,12 @@ export function GarageDoorNavbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden" onClick={toggleMobileMenu}>
-            <Menu size={24} />
+          <button className="lg:hidden text-primary size-16" onClick={toggleMobileMenu}>
+            <Menu size={16} className="size-16" />
           </button>
 
           {/* Phone Number - Always Visible */}
-          <div className="flex items-center space-x-2 bg-emerald-600 text-white rounded-md p-3">
+          <div className=" items-center space-x-2 bg-emerald-600 text-white rounded-md p-3 hidden md:flex">
             <Phone size={18} />
             <span className="font-semibold">(469) 909-0956</span>
           </div>
@@ -124,8 +124,8 @@ export function GarageDoorNavbar() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }} className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setMobileMenuOpen(false)} />
             <motion.div ref={sidebarRef} initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} transition={{ type: "spring", stiffness: 300, damping: 30 }} className="fixed top-0 right-0 h-full w-full sm:w-80 bg-white shadow-lg z-50 overflow-y-auto">
               <div className="p-4">
-                <button className="mb-4" onClick={toggleMobileMenu}>
-                  <X size={24} />
+                <button className="mb-4 text-primary size-16" onClick={toggleMobileMenu}>
+                  <X size={16} className="size-16" />
                 </button>
                 <MobileMenu />
               </div>
@@ -263,8 +263,15 @@ function MobileMenu() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <Link href="/giveaway" className="block p-2 hover:bg-emerald-50 rounded-md transition-colors text-lg font-semibold">
-        Giveaway
+      <Link href="/careers" legacyBehavior passHref>
+        <div className="relative">
+          <span span className="text-lg cursor-pointer z-10">
+            Careers
+          </span>
+
+          {/* Always visible "Hiring" notification */}
+          <span className="absolute  bg-[#32750a] text-white text-xs py-px px-1 rounded-full">Hiring</span>
+        </div>
       </Link>
     </div>
   );

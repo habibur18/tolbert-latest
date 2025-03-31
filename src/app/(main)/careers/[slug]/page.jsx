@@ -3,7 +3,8 @@ import { getAllJobSlugs, getJobBySlug } from "@/lib/job-data";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
-  const job = getJobBySlug(params.slug);
+  let slugRes = await params;
+  const job = getJobBySlug(await slugRes.slug);
 
   if (!job) {
     return {
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${job.title} | Careers at Tolbert Garage Door`,
       description: job.description.substring(0, 160) + "...",
-      url: `https://tolbert.paipixel.com/careers/${params.slug}`,
+      url: `https://tolbert.paipixel.com/careers/${slugRes.slug}`,
       siteName: "Tolbert Garage Door",
       images: [
         {
@@ -39,8 +40,9 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
-export default function JobDetail({ params }) {
-  const job = getJobBySlug(params.slug);
+export default async function JobDetail({ params }) {
+  let slugRes = await params;
+  const job = getJobBySlug(await slugRes.slug);
 
   if (!job) {
     notFound();

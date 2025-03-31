@@ -37,7 +37,7 @@ export default function GarageDoorMaintenanceMainPoints() {
             <p className="text-lg text-green-700">Whether you want to replace a garage door or a simple repair, we are confident that we will be able to get the job done quickly and promptly. We will come to your home or business and estimate the cost of installing or repairing garage doors. With a wide range of designs and style options, feel free to arrange a meeting with our experts!</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button size="lg" className="bg-primary hover:bg-green-600 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Free Estimate
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

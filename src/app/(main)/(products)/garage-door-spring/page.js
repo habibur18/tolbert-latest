@@ -15,12 +15,12 @@ export default function HeroSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="relative">
             <Badge className="mb-4 bg-green-500/10 text-green-600 hover:bg-green-500/20">
-              DFW's #1 <span>Garage Door Company</span>
+              DFW&apos;s #1 <span>Garage Door Company</span>
             </Badge>
             <h1 className="text-balance bg-gradient-to-br from-gray-900 to-gray-600 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
               Expert <span className="text-green-500">Garage Door Spring</span> Services
             </h1>
-            <p className="mt-6 max-w-[55ch] text-lg text-gray-600 sm:text-xl border w-full ">
+            <p className="mt-6 max-w-[55ch] text-lg text-gray-600 sm:text-xl w-full ">
               Professional installation and repair with industry-leading <span className="text-green-500">5-year</span> warranty. Available 24/7 for your <span className="text-green-500">garage door</span> needs.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
