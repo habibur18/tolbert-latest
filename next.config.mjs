@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "olympusgaragedoorrepair.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.metrogaragedoor.net",
+      },
     ],
   },
 };

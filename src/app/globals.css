@@ -105,3 +105,7 @@ body {
   animation-play-state: paused;
   transform: scale(1.05);
 }
+
+html {
+  scroll-behavior: smooth;
+}
