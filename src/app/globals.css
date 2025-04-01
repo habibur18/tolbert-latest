@@ -123,3 +123,33 @@ html {
     clip-path: ellipse(50% 50% at 50% 100%);
   }
 }
+
+/* For About Us Sections */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-animation-delay-1 {
+  animation-delay: 1s;
+}
+
+.floating-animation-delay-2 {
+  animation-delay: 2s;
+}
+
+.floating-animation-delay-3 {
+  animation-delay: 3s;
+}

@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import { GarageDoorNavbar } from "@/components/GarageDoorNavbar";
+import MobileNavigation from "@/components/main/mobile-navigation";
 import { Button } from "@/components/ui/button";
 import { ConfettiProvider } from "@/context/confetti-context";
 import { Phone } from "lucide-react";
@@ -28,6 +29,8 @@ export default function layout({ children }) {
       </div>
       <ConfettiProvider>{children}</ConfettiProvider>
       <Footer />
+      {/* Mobile Navigation */}
+      <MobileNavigation />
     </div>
   );
 }

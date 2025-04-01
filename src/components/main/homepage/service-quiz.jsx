@@ -347,9 +347,9 @@ export function ServiceQuiz() {
             </motion.div>
 
             <div className="space-y-4">
-              <div className="flex gap-2 w-full">
+              <div className="md:flex md:gap-2 w-full space-y-4 md:space-y-0">
                 {/* Full Name Field */}
-                <div className="relative w-full">
+                <div className="relative w-full ">
                   <input type="text" id="fullName" name="fullName" className="block rounded-lg px-4 pb-2.5 pt-5 w-full text-lg text-gray-900 bg-white/90 border-0 appearance-none focus:outline-none focus:ring-2 focus:ring-green-500 peer h-14 shadow-md" placeholder=" " required />
                   <label htmlFor="fullName" className="absolute text-lg text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-4 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">
                     Full Name
@@ -401,7 +401,7 @@ export function ServiceQuiz() {
                   ) : (
                     <>
                       <Send className="mr-2 h-5 w-5" />
-                      Get Free Estimate
+                      <span className="hidden sm:inline">Get</span> Free Estimate
                     </>
                   )}
                 </Button>
