@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.metrogaragedoor.net",
       },
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+      },
     ],
   },
 };

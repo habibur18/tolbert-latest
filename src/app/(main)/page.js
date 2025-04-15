@@ -14,6 +14,7 @@ export const metadata = {
   title: "Tolbert Garage Door Repair | DFW#1 Garage Door Services in Dallas, TX",
   description: "Top-rated garage door repair and installation in Dallas, TX. Fast, affordable, and reliable services, including same-day repairs, opener fixes, and spring replacements. Get a free quote now!",
   keywords: "garage door repair Dallas, garage door installation, same-day garage door service, opener repair, spring replacement, commercial garage doors, residential garage doors, emergency garage door repair Dallas",
+  icons: "/Tolbert Garage Door Logo.png",
   openGraph: {
     title: "Tolbert Garage Door Repair | Expert Garage Door Services in Dallas, TX",
     description: "Dallas’s most trusted garage door repair and installation experts. We provide fast, reliable service for residential and commercial garage doors. Get fast same-day service and free estimates. Contact us now!",

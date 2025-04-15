@@ -36,7 +36,7 @@ const products = [
   { title: "Doors", image: "/Doors.png", href: "/garage-door" },
   { title: "Spring", image: "/Springs.png", href: "/garage-door-spring" },
   { title: "Screens", image: "/Screens.png", href: "/garage-door-screen" },
-  { title: "Gates", image: "/Gates.png", href: "/garage-door-gate" },
+  { title: "Gates", image: "/Gates.png", href: "/gate-installation-dallas" },
   { title: "Commercial Doors", image: "/Commercial Doors.png", href: "/commercial-door-systems" },
   { title: "Parts", image: "/Parts.png", href: "/garage-door-spring" },
   { title: "Storage Units", image: "/Storage Units.png", href: "/storage-unit-doors-repair" },
