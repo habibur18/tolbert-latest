@@ -12,18 +12,21 @@ export function OurStory() {
             <div className="relative z-10 grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform -rotate-3 hover:rotate-0 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Tolbert Garage Door founding" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/gate/story/all-members.avif" alt="Tolbert Garage Door founding" width={250} height={300} className="w-full h-full object-cover" />
                 </div>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform rotate-3 hover:rotate-0 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Tolbert Garage Door team" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/Tolbert and his team.jpg" alt="Tolbert Garage Door team" width={250} height={300} className="w-full h-full object-cover" />
+                </div>
+                <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform rotate-3 hover:rotate-0 transition-transform">
+                  <Image src="/gate/with-community.jpg" alt="Tolbert Garage Door Community event" width={250} height={300} className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="space-y-4 mt-8">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform rotate-3 hover:rotate-0 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Tolbert Garage Door installation" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/gate/tolbert installing garage door.jpg" alt="Tolbert Garage Door installation" width={250} height={300} className="w-full h-full object-cover" />
                 </div>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform -rotate-3 hover:rotate-0 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Tolbert Garage Door community" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/gate/Tolbert Garage Door community.jpg" alt="Tolbert Garage Door community" width={250} height={300} className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

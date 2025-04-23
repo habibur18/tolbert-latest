@@ -12,7 +12,7 @@ export function CallToAction() {
             <Button size="lg" className="bg-white text-[#32750a] hover:bg-white/90 font-bold text-xl px-10 py-8 rounded-full">
               Schedule Free Consultation
             </Button>
-            <Button size="lg" variant="outline" className="border-white border-2 text-white hover:bg-white/10 font-medium text-xl px-10 py-8 rounded-full">
+            <Button size="lg" variant="outline" className="border-white border-2 text-[#32750a] hover:bg-white/10 hover:text-white font-medium text-xl px-10 py-8 rounded-full">
               <Phone className="mr-3 h-6 w-6" /> Call Now
             </Button>
           </div>

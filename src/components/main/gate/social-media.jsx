@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { ArrowRight, CheckCircle, Facebook, Instagram, MessageCircle, Play, ThumbsUp, Youtube } from "lucide-react";
+import { ArrowRight, Facebook, Instagram, ThumbsUp, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,137 +15,88 @@ export function SocialMedia() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <div className="space-y-8">
-              <div className="flex items-start gap-6 group">
-                <div className="bg-blue-500 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
-                  <Facebook className="h-8 w-8" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Follow Us on Facebook</h3>
-                  <p className="text-gray-600 text-lg mb-3">Join our Facebook community for exclusive content, project showcases, and special promotions.</p>
-                  <div className="bg-gray-100 p-3 rounded-lg mb-3 relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
-                    <p className="text-gray-700 italic">"Just finished installing our beautiful new gate from Tolbert! Check out the photos below. Incredible craftsmanship and attention to detail!"</p>
-                    <div className="flex justify-between items-center mt-2">
-                      <span className="text-sm text-gray-500">Posted 2 days ago</span>
-                      <div className="flex gap-2">
-                        <button className="text-blue-500 text-sm flex items-center">
-                          <ThumbsUp className="h-3 w-3 mr-1" /> 24
-                        </button>
-                        <button className="text-blue-500 text-sm flex items-center">
-                          <MessageCircle className="h-3 w-3 mr-1" /> 5
-                        </button>
+              <Link href="https://facebook.com/tolbertgaragedoor" target="_blank">
+                <div className="flex items-start gap-6 group">
+                  <div className="bg-blue-500 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
+                    <Facebook className="h-8 w-8" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Follow Us on Facebook</h3>
+                    <p className="text-gray-600 text-lg mb-3">Join our Facebook community for exclusive content, project showcases, and special promotions.</p>
+                    <div className="bg-gray-100 p-3 rounded-lg mb-3 relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                      <p className="text-gray-700 italic">"Tolbert Garage Door is a company that actually cares about customers service. I bought a Liftmaster from them last year and had one issue. They sent out Mario, who is as nice a dude as you will ever meet. No charge follow up which turned out to be my own fault when I added decking to my attic. Mario helped me and Colby responded quickly when I texted. The company is highly recommended and super honest and up front!! Love them!! "</p>
+                      <div className="flex justify-between items-center mt-2">
+                        <span className="text-sm text-gray-500">Posted 16 January</span>
                       </div>
                     </div>
+                    <Link href="https://facebook.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
+                      @TolbertGarageDoor <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
                   </div>
-                  <Link href="https://facebook.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
-                    @TolbertGarageDoor <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
-                  </Link>
                 </div>
-              </div>
+              </Link>
 
-              <div className="flex items-start gap-6 group">
-                <div className="bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
-                  <Instagram className="h-8 w-8" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Follow Us on Instagram</h3>
-                  <p className="text-gray-600 text-lg mb-3">See our latest installations and design inspirations on our Instagram page.</p>
-                  <div className="grid grid-cols-3 gap-2 mb-3">
-                    <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
-                      <Image src="/placeholder.svg?height=100&width=100" alt="Instagram post" width={100} height={100} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                        <div className="text-white text-xs flex items-center">
-                          <ThumbsUp className="h-3 w-3 mr-1" /> 42
-                        </div>
-                      </div>
-                    </div>
-                    <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
-                      <Image src="/placeholder.svg?height=100&width=100" alt="Instagram post" width={100} height={100} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                        <div className="text-white text-xs flex items-center">
-                          <ThumbsUp className="h-3 w-3 mr-1" /> 38
-                        </div>
-                      </div>
-                    </div>
-                    <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
-                      <Image src="/placeholder.svg?height=100&width=100" alt="Instagram post" width={100} height={100} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                        <div className="text-white text-xs flex items-center">
-                          <ThumbsUp className="h-3 w-3 mr-1" /> 56
-                        </div>
-                      </div>
-                    </div>
+              <Link href="https://instagram.com/tolbertgaragedoor" target="_blank" className="inline-flex items-center text-[#32750a] font-medium">
+                <div className="flex items-start gap-6 group">
+                  <div className="bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
+                    <Instagram className="h-8 w-8" />
                   </div>
-                  <Link href="https://instagram.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
-                    @TolbertGarageDoor <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-6 group">
-                <div className="bg-red-600 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
-                  <Youtube className="h-8 w-8" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Subscribe on YouTube</h3>
-                  <p className="text-gray-600 text-lg mb-3">Watch our installation videos, maintenance tips, and customer testimonials.</p>
-                  <div className="bg-gray-100 rounded-lg overflow-hidden mb-3 relative">
-                    <div className="aspect-video bg-gray-200 relative">
-                      <Image src="/placeholder.svg?height=200&width=350" alt="YouTube video thumbnail" width={350} height={200} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-12 h-12 rounded-full bg-red-600/90 flex items-center justify-center cursor-pointer hover:bg-red-700 transition-colors">
-                          <Play className="h-6 w-6 text-white" />
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Follow Us on Instagram</h3>
+                    <p className="text-gray-600 text-lg mb-3">See our latest installations and design inspirations on our Instagram page.</p>
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
+                        <Image src="/gate/social/instagram-friends-of-tolbert-garage-door.jpg" alt="Instagram post" width={200} height={100} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
+                        <Image src="/gate/social/dfw-friends.jpg" alt="Instagram post" width={200} height={100} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="aspect-square bg-gray-200 rounded-md overflow-hidden relative group/img">
+                        <Image src="/gate/social/tolbert-employee.jpg" alt="Instagram post" width={200} height={100} className="w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                          <div className="text-white text-xs flex items-center">
+                            <ThumbsUp className="h-3 w-3 mr-1" /> 56
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="p-3">
-                      <h4 className="font-bold">How to Choose the Perfect Gate for Your Home</h4>
-                      <div className="flex justify-between items-center mt-1">
-                        <span className="text-sm text-gray-500">4.2K views • 2 weeks ago</span>
-                        <div className="flex gap-2">
-                          <button className="text-red-600 text-sm flex items-center">
-                            <ThumbsUp className="h-3 w-3 mr-1" /> 128
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <Link href="https://youtube.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
-                    Tolbert Garage Door Channel <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-6 group">
-                <div className="bg-[#32750a] rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
-                  <MessageCircle className="h-8 w-8" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Join Our Newsletter</h3>
-                  <p className="text-gray-600 text-lg mb-3">Subscribe to our newsletter for maintenance tips, industry news, and exclusive offers.</p>
-                  <div className="bg-gray-50 p-4 rounded-xl border border-gray-200 mb-3">
-                    <h4 className="font-bold text-[#32750a] mb-2">Subscriber Benefits:</h4>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-[#32750a] mr-2 shrink-0 mt-0.5" />
-                        <span>Seasonal maintenance checklists</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-[#32750a] mr-2 shrink-0 mt-0.5" />
-                        <span>Exclusive subscriber-only discounts</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-[#32750a] mr-2 shrink-0 mt-0.5" />
-                        <span>Early access to new products and services</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="flex gap-2 mt-2">
-                    <Input type="email" placeholder="Your email address" className="bg-gray-100 border-0 focus:ring-2 focus:ring-[#32750a]" />
-                    <Button className="bg-[#32750a] hover:bg-[#32750a]/90">Subscribe</Button>
+                    <Link href="https://instagram.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
+                      @TolbertGarageDoor <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
                   </div>
                 </div>
-              </div>
+              </Link>
+              <Link href="https://www.youtube.com/@colbytolbert782/videos" target="_blank" className="inline-flex items-center text-[#32750a]">
+                <div className="flex items-start gap-6 group">
+                  <div className="bg-red-600 rounded-2xl p-4 text-white transform transition-transform group-hover:scale-110">
+                    <Youtube className="h-8 w-8" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-[#32750a] transition-colors">Subscribe on YouTube</h3>
+                    <p className="text-gray-600 text-lg mb-3">Watch our installation videos, maintenance tips, and customer testimonials.</p>
+                    <div className="bg-gray-100 rounded-lg overflow-hidden mb-3 relative">
+                      <div className="aspect-video bg-gray-200 relative">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rOAOO8m891w" title="Tolbert garage door &amp; CBS11News Team up against theives" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
+                      <div className="p-3">
+                        <h4 className="font-bold">How to Choose the Perfect Gate for Your Home</h4>
+                        <div className="flex justify-between items-center mt-1">
+                          <span className="text-sm text-gray-500">4.2K views • 2 weeks ago</span>
+                          <div className="flex gap-2">
+                            <button className="text-red-600 text-sm flex items-center">
+                              <ThumbsUp className="h-3 w-3 mr-1" /> 128
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <Link href="https://youtube.com/tolbertgaragedoor" className="inline-flex items-center text-[#32750a] font-medium hover:underline group">
+                      Tolbert Garage Door Channel <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -157,17 +106,18 @@ export function SocialMedia() {
             <div className="relative z-10 grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl h-48 transform hover:scale-105 transition-transform">
-                  <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-                    <source src="https://example.com/videos/gate-installation.mp4" type="video/mp4" />
+                  <video autoPlay muted loop playsInline controls className="w-full h-full object-cover">
+                    <source src="https://video.wixstatic.com/video/ce12da_49c161c0cc054045bd50c914ae8f98b0/360p/mp4/file.mp4" type="video/mp4" />
                   </video>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
-                      <Play className="h-6 w-6 text-white" />
-                    </div>
+                </div>
+                <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform">
+                  <Image src="/gate/social/tolbert and friends.jpg" alt="Social media post" width={250} height={300} className="w-full h-full object-cover" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+                    <p className="text-white text-sm font-medium">Customer spotlight: The Johnson family's new gate</p>
                   </div>
                 </div>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Social media post" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/gate/social/tolbert-with-friends.jpg" alt="Social media post" width={250} height={300} className="w-full h-full object-cover" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
                     <p className="text-white text-sm font-medium">Customer spotlight: The Johnson family's new gate</p>
                   </div>
@@ -175,7 +125,7 @@ export function SocialMedia() {
               </div>
               <div className="space-y-4 mt-8">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform">
-                  <Image src="/placeholder.svg?height=300&width=250" alt="Customer review" width={250} height={300} className="w-full h-full object-cover" />
+                  <Image src="/gate/social/5star.jpg" alt="Customer review" width={250} height={300} className="w-full h-full object-cover" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
                     <div className="flex items-center">
                       <div className="flex">
@@ -191,40 +141,9 @@ export function SocialMedia() {
                   </div>
                 </div>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl h-48 transform hover:scale-105 transition-transform">
-                  <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-                    <source src="https://example.com/videos/garage-door-demo.mp4" type="video/mp4" />
+                  <video autoPlay muted loop playsInline controls className="w-full h-full object-cover">
+                    <source src="https://video.wixstatic.com/video/ce12da_94b2357d6bb04fe08783aaf375a5d0b2/720p/mp4/file.mp4" type="video/mp4" />
                   </video>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
-                      <Play className="h-6 w-6 text-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 bg-white p-4 rounded-xl shadow-lg">
-              <h3 className="font-bold text-lg mb-2">Join Our Community Events</h3>
-              <div className="space-y-3">
-                <div className="flex gap-3 items-start border-b border-gray-100 pb-3">
-                  <div className="bg-[#32750a]/10 text-[#32750a] font-bold rounded-lg p-2 text-center min-w-[50px]">
-                    <div className="text-sm">APR</div>
-                    <div className="text-xl">15</div>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">DIY Gate Maintenance Workshop</h4>
-                    <p className="text-sm text-gray-600">Learn how to keep your gate in top condition</p>
-                  </div>
-                </div>
-                <div className="flex gap-3 items-start">
-                  <div className="bg-[#32750a]/10 text-[#32750a] font-bold rounded-lg p-2 text-center min-w-[50px]">
-                    <div className="text-sm">MAY</div>
-                    <div className="text-xl">22</div>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Smart Home Integration Seminar</h4>
-                    <p className="text-sm text-gray-600">Discover how to connect your gates to your smart home</p>
-                  </div>
                 </div>
               </div>
             </div>

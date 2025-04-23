@@ -110,7 +110,7 @@ export function GarageDoorNavbar() {
           </button>
 
           {/* Phone Number - Always Visible */}
-          <div className=" items-center space-x-2 bg-emerald-600 text-white rounded-md p-3 hidden md:flex">
+          <div className=" items-center space-x-2 bg-primary text-white rounded-md p-3 hidden md:flex">
             <Phone size={18} />
             <span className="font-semibold">(469) 909-0956</span>
           </div>
