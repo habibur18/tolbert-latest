@@ -29,6 +29,12 @@ const services = [
     image: "/Garage Door Maintenance.png",
     href: "/garage-door-maintenance",
   },
+  {
+    title: "Garage Door Replacemet",
+    description: "Regular Replacemet to keep your garage door in top condition",
+    image: "/Garage Door Replacement.png",
+    href: "/garage-door-replacement",
+  },
 ];
 
 const products = [
@@ -142,7 +148,7 @@ function DesktopMenu() {
     <NavigationMenu>
       <NavigationMenuList className="flex items-center space-x-4">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg">Door Services</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg">Garage Door Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {services.map((service) => (
