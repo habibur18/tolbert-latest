@@ -16,26 +16,26 @@ export default function GarageDoorReplacement() {
     {
       title: "Garage Door Installation",
       description: "Professional installation of new garage doors",
-      link: "/garage-door-installation",
-      image: "/placeholder.svg?height=80&width=80",
+      link: "/services/garage-door-installation",
+      image: "/installation.png",
     },
     {
       title: "Garage Door Repair",
       description: "Quick fixes for all garage door issues",
-      link: "/garage-door-repair",
-      image: "/placeholder.svg?height=80&width=80",
+      link: "/services/garage-door-repair",
+      image: "/Garage Door Repair.png",
     },
     {
       title: "Garage Door Maintenance",
       description: "Regular service to prevent future problems",
-      link: "/garage-door-maintenance",
-      image: "/placeholder.svg?height=80&width=80",
+      link: "/services/garage-door-maintenance",
+      image: "/Garage Door Maintenance.png",
     },
     {
       title: "Garage Door Replacement",
       description: "Complete replacement of outdated doors",
-      link: "/garage-door-replacement",
-      image: "/placeholder.svg?height=80&width=80",
+      link: "/services/garage-door-replacement",
+      image: "/Garage Door Replacement.png",
       active: true,
     },
   ];
@@ -119,14 +119,29 @@ export default function GarageDoorReplacement() {
       </section>
 
       {/* Services Navigation */}
+      {/* Services Navigation */}
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {services.map((service, index) => (
-              <Link href={service.link} key={index} target="_blank" className={`block p-4 rounded-lg text-center ${service.active ? "bg-primary text-white" : "bg-white hover:bg-gray-100"} transition-all shadow-sm`}>
+            {services.map((service) => (
+              <Link
+                href={service.link}
+                key={service.id} // Use a unique id here instead of index
+                target="_blank"
+                aria-label={`Learn more about ${service.title}`}
+                className={`block p-4 rounded-lg text-center ${service.active ? "bg-primary text-white" : "bg-white hover:bg-gray-100"} transition-all shadow-sm`}
+              >
                 <div className="flex flex-col items-center h-full">
-                  <div className="mb-3 w-16 h-16 relative">
-                    <Image src={service.image || "/placeholder.svg"} alt={service.title} width={80} height={80} className="object-contain" />
+                  <div className="mb-3 w-60 h-60 relative">
+                    {" "}
+                    {/* Fixed width and height */}
+                    <Image
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.title}
+                      width={240} // Fixed width
+                      height={240} // Fixed height
+                      className="object-cover w-full h-full rounded-md" // Ensure the image fills the container and retains aspect ratio
+                    />
                   </div>
                   <h3 className={`font-bold ${service.active ? "text-white" : "text-gray-800"}`}>{service.title}</h3>
                   <p className={`text-sm mt-1 ${service.active ? "text-white/90" : "text-gray-600"}`}>{service.description}</p>
@@ -320,7 +335,7 @@ export default function GarageDoorReplacement() {
             <p className="text-lg md:text-xl mb-8 text-white/90">Get started with a free, no-obligation quote for your garage door replacement project.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-md font-medium">Get Your Free Quote</button>
-              <button className="text-white border border-white hover:bg-white/10 px-6 py-3 rounded-md font-medium">Call (214) 555-1234</button>
+              <button className="text-white border border-white hover:bg-white/10 px-6 py-3 rounded-md font-medium">Call (469) 909-0956</button>
             </div>
           </div>
         </div>

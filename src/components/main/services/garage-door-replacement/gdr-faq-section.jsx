@@ -66,8 +66,8 @@ export default function GDRFaqSection() {
         <div className="mt-10 text-center">
           <p className="text-gray-600">
             Still have questions? Contact our team at{" "}
-            <a href="tel:214-555-1234" className="text-primary font-medium hover:underline">
-              (214) 555-1234
+            <a href="tel:469-909-0956" className="text-primary font-medium hover:underline">
+              (469) 909-0956
             </a>
           </p>
         </div>

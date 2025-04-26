@@ -229,7 +229,7 @@ export default function GarageDoorForm() {
 
                   <div>
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" name="phone" placeholder="(214) 555-1234" required value={formattedPhone} onChange={handleChange} className={`mt-1 ${errors.phone ? "border-red-500" : ""}`} />
+                    <Input id="phone" name="phone" placeholder="(469) 909-0956" required value={formattedPhone} onChange={handleChange} className={`mt-1 ${errors.phone ? "border-red-500" : ""}`} />
                     {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                   </div>
                 </div>

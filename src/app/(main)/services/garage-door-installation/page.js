@@ -1,4 +1,5 @@
 import ImageGallery from "@/components/image-gallery";
+import GDIHeroSection from "@/components/main/services/garage-door-instalation/GDI-HeroSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -36,7 +37,8 @@ export default function GarageDoorInstallation() {
     <>
       <div className="relative">
         {/* Hero Section with Form */}
-        <div>
+        <GDIHeroSection />
+        <div className="hidden">
           <div className="absolute inset-0">
             <Image src="https://olympusgaragedoorrepair.com/images/new-install.jpg" alt="Background Image" fill className="w-full h-full object-cover lg:object-fill" />
             <div className="absolute inset-0 bg-black/50" />

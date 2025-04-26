@@ -7,6 +7,9 @@ import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  icons: "/Tolbert Garage Door Logo.png",
+};
 export default function layout({ children }) {
   return (
     <div className="relative">
