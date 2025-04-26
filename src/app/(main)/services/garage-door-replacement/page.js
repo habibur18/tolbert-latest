@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Garage Door Replacement Dallas TX | New Installations & Upgrades || Tolbert Garage Door Repair",
+  title: "Garage Door Replacement Near Dallas TX | New Installations & Upgrades || Tolbert Garage Door Repair",
   description: "Need professional garage door replacement in Dallas, TX? Tolbert Garage Door Repair offers expert service, a wide selection of new garage doors, and upgrades to enhance your home's security and curb appeal. Get a free quote!",
   keywords: "garage door replacement Dallas TX, new garage door installation Dallas, residential garage doors Dallas, garage door upgrade Dallas, emergency garage door replacement near me Dallas, cost to replace garage door Dallas, best garage door company Dallas, local garage door installers Dallas, garage door supply and service Dallas, reliable garage door replacement Dallas, Tolbert Garage Door Repair",
 };
@@ -45,25 +45,25 @@ export default function GarageDoorReplacement() {
       title: "Steel Doors",
       description: "Durable, low-maintenance options with various insulation levels.",
       price: "Starting at $899",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/services/Steel Doors.jpg",
     },
     {
       title: "Wood Doors",
       description: "Classic beauty with natural warmth and customizable designs.",
       price: "Starting at $1,299",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/services/Wood Doors.jpg",
     },
     {
       title: "Modern Designs",
       description: "Contemporary styles with glass and aluminum for a sleek look.",
       price: "Starting at $1,499",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/services/Modern Designs.webp",
     },
     {
       title: "Lifestyle Garage Doors",
       description: "Versatile, screen options that transform your garage into a functional living space.",
       price: "Starting at $1,699",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/services/Lifestyle Garage Doors.avif",
     },
   ];
 

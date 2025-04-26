@@ -206,14 +206,12 @@ function DesktopMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/careers" legacyBehavior passHref>
-            <div className="relative">
-              <NavigationMenuLink className="text-lg cursor-pointer z-10">Careers</NavigationMenuLink>
-
-              {/* Always visible "Hiring" notification */}
-              <span className="absolute -z-10 -top-2 -right-8 bg-[#32750a] text-white text-xs py-px px-1 rounded-full">Hiring</span>
-            </div>
-          </Link>
+          <NavigationMenuLink asChild>
+            <Link href="/careers" className="relative text-lg cursor-pointer flex items-center space-x-2">
+              Careers
+              <span className="absolute -top-2 -right-8 bg-[#32750a] text-white text-xs py-px px-1 rounded-full">Hiring</span>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
