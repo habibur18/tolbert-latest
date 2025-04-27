@@ -11,7 +11,7 @@ const recentProjects = [
     location: "Dallas, TX",
     date: "Last week",
     description: "Installed a new insulated steel garage door with windows for enhanced curb appeal and energy efficiency.",
-    image: "/project1.jpg",
+    image: "/home/recents/Modern Wood Garage Door Installation in Rockwall,TX.jpg",
     tags: ["Installation", "Steel Door", "Insulated"],
   },
   {
@@ -20,7 +20,7 @@ const recentProjects = [
     location: "Fort Worth, TX",
     date: "2 weeks ago",
     description: "Repaired and serviced a high-cycle commercial door for a local warehouse, minimizing business disruption.",
-    image: "/project2.jpg",
+    image: "/home/recents/Modern Wood Garage Door Installation in DFW,TX by tolbert garage door.jpg",
     tags: ["Commercial", "Repair", "Same-Day Service"],
   },
   {
@@ -29,7 +29,7 @@ const recentProjects = [
     location: "Plano, TX",
     date: "3 weeks ago",
     description: "Upgraded an existing garage door with a new smart opener featuring smartphone control and battery backup.",
-    image: "/project3.jpg",
+    image: "/home/recents/Modern Wood Garage Door Installation in mesquite, texas by tolbert garage door repair.jpg",
     tags: ["Smart Technology", "Opener", "Upgrade"],
   },
 ];
@@ -50,8 +50,8 @@ export default function RecentProjects() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {recentProjects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group">
-              <div className="relative h-48">
-                <Image src={project.image || "/placeholder.svg"} alt={project.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="relative">
+                <Image src={project.image || "/placeholder.svg"} alt={project.title} width={600} height={250} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
 
               <div className="p-6">

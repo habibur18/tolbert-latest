@@ -25,8 +25,8 @@ export default function HeroSection() {
             {/* Left Column */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">TOLBERT GARAGE DOOR REPAIR DALLAS</h1>
-                <p className="text-green-100 text-xl">Your trusted provider of high-quality garage door solutions in the Dallas-Fort Worth area</p>
+                <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl text-white">TOLBERT GARAGE DOOR REPAIR - DALLAS, TX</h1>
+                <p className="text-green-100 text-xl">Looking for expert garage door repair in Dallas-Fort Worth? Tolbert Garage Door Repair offers free estimates and same-day services to ensure your garage door is up and running without delay. Whether you need emergency repairs, spring replacements, or a new installation, our experienced technicians provide fast, reliable, and affordable service. We quickly diagnose issues and deliver solutions, getting your garage door back in working order. Contact us today for hassle-free service and a free estimate!</p>
               </div>
 
               <a href="tel:(469)909-0956" className="herobtn block items-center px-6 py-3 rounded-full text-white font-bold text-lg transition-colors">

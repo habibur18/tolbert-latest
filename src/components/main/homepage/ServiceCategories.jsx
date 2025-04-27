@@ -11,7 +11,7 @@ const services = [
     name: "Garage Door Repairs",
     icon: <Tool className="h-6 w-6" />,
     description: "Fast, reliable repairs for all garage door issues. We fix springs, cables, openers, and more.",
-    image: "/repair-service.jpg",
+    image: "/home/solutions/garage door repair by tolbert garage door repair.jpg",
     features: ["Same-day service available", "90-day labor warranty", "Lifetime warranty on parts", "All major brands serviced"],
     commonIssues: [
       { name: "Broken Springs", time: "1-2 hours" },
@@ -25,7 +25,7 @@ const services = [
     name: "New Door Installation",
     icon: <DoorClosed className="h-6 w-6" />,
     description: "Premium garage doors installed by certified technicians. Choose from a wide range of styles and materials.",
-    image: "/installation-service.jpg",
+    image: "/home/solutions/Tolbert garage door men employee installing garage door at Roehl Transport Inc.jpg",
     features: ["Free in-home consultation", "Professional installation", "5-year installation warranty", "Financing available"],
     doorTypes: [
       { name: "Steel Doors", features: "Durable, insulated, low-maintenance" },
@@ -39,7 +39,7 @@ const services = [
     name: "Garage Door Openers",
     icon: <Settings className="h-6 w-6" />,
     description: "Smart, reliable garage door openers with the latest technology for smooth and quiet operation.",
-    image: "/opener-service.jpg",
+    image: "/home/solutions/tolbert garage door man setup garage door openers.jpg",
     features: ["Professional installation", "WiFi & smartphone compatible", "Battery backup options", "Quiet operation models"],
     openerTypes: [
       { name: "Chain Drive", features: "Economical, reliable, standard" },
@@ -53,7 +53,7 @@ const services = [
     name: "Maintenance & Tune-Ups",
     icon: <Wrench className="h-6 w-6" />,
     description: "Preventative maintenance to keep your garage door operating safely and extend its lifespan.",
-    image: "/maintenance-service.jpg",
+    image: "/home/solutions/Garage-Door-Tune-Up by Tolbert Garage Door.webp",
     features: ["21-point inspection", "Lubrication of moving parts", "Hardware tightening", "Safety sensor alignment"],
     plans: [
       { name: "Basic Tune-Up", includes: "Inspection, lubrication, adjustment" },
@@ -80,7 +80,7 @@ export default function ServiceCategories() {
         <Tabs defaultValue="repairs" className="w-full">
           <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 bg-transparent h-auto mb-8">
             {services.map((service) => (
-              <TabsTrigger key={service.id} value={service.id} className={cn("flex flex-col items-center gap-2 p-4 rounded-lg data-[state=active]:bg-white", "border border-gray-200 shadow-sm data-[state=active]:shadow-md", "data-[state=active]:border-[#32750a] data-[state=active]:font-bold transition-all duration-200", "h-auto")}>
+              <TabsTrigger key={service.id} value={service.id} className={cn("flex flex-col items-center gap-2 p-4 rounded-lg data-[state=active]:bg-white", "border border-gray-200 shadow-sm data-[state=active]:shadow-md", "data-[state=active]:border-[#32750a]  data-[state=active]:font-bold transition-all duration-200 data-[state=active]:border-[3px]", "h-auto")}>
                 <div className={cn("p-2 rounded-full", "bg-gray-100 data-[state=active]:bg-[#32750a]/10", "text-gray-600 data-[state=active]:text-[#32750a]")}>{service.icon}</div>
                 <span className="text-sm font-medium">{service.name}</span>
               </TabsTrigger>

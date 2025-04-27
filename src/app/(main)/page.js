@@ -21,10 +21,11 @@ import ServiceCategories from "@/components/main/homepage/ServiceCategories";
 import TeamShowcase from "@/components/main/homepage/TeamShowcase";
 import TestimonialShowcase from "@/components/main/homepage/TestimonialShowcase";
 import TrustSignals from "@/components/main/homepage/TrustSignals";
+import Image from "next/image";
 // import WebsiteAccessibility from "@/components/WebsiteAccessibility";
 
 export const metadata = {
-  title: "Tolbert Garage Door Repair | #1 Rated Garage Door Service in Dallas-Fort Worth",
+  title: "Tolbert Garage Door Repair | Top-Rated DFW Garage Door Service | Free Estimates & 24/7 Emergency Help",
   description: "24/7 emergency garage door repair in DFW. Same-day service, free estimates & 5-star rated technicians. Repairs from $89, new doors from $699. Call (469)-909-0956 now!",
   keywords: "garage door repair Dallas, emergency garage door service, broken spring repair, garage door opener installation, commercial garage door repair, same-day garage door service, affordable garage door repair DFW, garage door replacement Dallas",
   alternates: {
@@ -72,6 +73,14 @@ export const metadata = {
   category: "Home Services",
 };
 
+const partners = [
+  { name: "Clopay", logo: "/Logo-clopay.png" },
+  { name: "LiftMaster", logo: "/LiftMaster.png" },
+  { name: "Amarr", logo: "/Amarr.png" },
+  { name: "Genie", logo: "/Craftsman-Logo.png" },
+  { name: "Wayne Dalton", logo: "/Raynor.png" },
+];
+
 export default function Home() {
   return (
     <>
@@ -102,7 +111,17 @@ export default function Home() {
       <main>
         {/* Service categories with pricing */}
         <ServiceCategories />
-
+        {/* Partner logos */}
+        <div className="pt-4 border-t border-gray-100">
+          <p className="text-center text-xs text-gray-500 uppercase tracking-wider mb-4">Authorized Dealer For</p>
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {partners.map((partner, i) => (
+              <div key={i} className=" transition-all duration-300">
+                <Image src={partner.logo || "/placeholder.svg"} alt={`${partner.name} - Authorized Dealer`} width={150} height={80} className="w-auto h-16 object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
         {/* Emergency services section */}
         <EmergencyServices />
 

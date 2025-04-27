@@ -10,70 +10,84 @@ import { useState } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Sav W",
+    name: "Bill Witty",
     location: "Dallas, TX",
-    image: "/testimonial1.jpg",
+    image: "/testimonials/bill witty and her wife w3 electricians owner.jpg",
     rating: 5,
-    date: "2 weeks ago",
-    description: "Never expected to call for help and get serviced the same day. Brandon and CJ were amazing and got my commercial doors fixed right away. I loved the confidence that they both had when figuring out what was needed to fix my doors and the cost was extremely reasonable. Tolbert garage doors are my new go to for my garage door repairs! Thank you!",
-    service: "Commercial Door Repair",
+    date: "1 weeks ago",
+    description: "Tolbert Garage is great. Highly recommended. In addition to stopping by our shop and looking at our garage door, they are big advocates for our community and do a lot to help. I’ll definitely be calling them if I need anything else",
+    service: "Garage Door Installation",
     videoId: "testimonial-video-1",
-    hasVideo: true,
+    hasVideo: false,
   },
   {
     id: 2,
-    name: "Evan Johnson",
+    name: "Zach Randle",
     location: "Fort Worth, TX",
-    image: "/testimonial2.jpg",
+    image: "/testimonials/Zach Randle review to tolbert garage door.jpg",
     rating: 5,
     date: "1 month ago",
-    description: "Great folks. They came out next day and fixed my garage door within hours. Also came in WAY under other estimates we were getting. Thanks so much for taking care of us!",
+    description: "Tolbert Garage Door is a company that actually cares about customers service. I bought a Liftmaster from them last year and had one issue. They sent out Mario, who is as nice a dude as you will ever meet. No charge follow up which turned out to be my own fault when I added decking to my attic. Mario helped me and Colby responded quickly when I texted. The company is highly recommended and super honest and up front!! Love them!!",
     service: "Garage Door Repair",
     videoId: "testimonial-video-2",
     hasVideo: false,
   },
   {
     id: 3,
-    name: "Jerry Wascom",
-    location: "Plano, TX",
-    image: "/testimonial3.jpg",
+    name: "Alyson Whitefield",
+    location: "Dallas, TX",
+    image: "/testimonials/Alyson Whitefield.jpg",
     rating: 5,
     date: "2 months ago",
-    description: "Kevin was great. He was here on time, told me the price and went right to work. He did a great job replacing both springs and tuning up the entire system. The door works better than it ever has.",
-    service: "Spring Replacement",
+    description: "We just returned from a long road trip from Michigan and discovered that our garage door had been accidentally damaged. I immediately contacted Tolbert Garage Door, and they sent a technician out within an hour! Brandon was professional, kind, and completed the repair in under 15 minutes. Wow! Their service and expertise are unbeatable. I highly recommend them for all your garage door needs!",
+    service: "Garage Door Repair",
     videoId: "testimonial-video-3",
     hasVideo: false,
   },
   {
     id: 4,
-    name: "Brittany Craft",
-    location: "Frisco, TX",
-    image: "/testimonial4.jpg",
+    name: "Regan Bullock",
+    location: "Dallas, TX",
+    image: "/testimonials/Regan Bullock review to tolbert garge door repair.jpg",
     rating: 5,
     date: "3 months ago",
-    description: "Great customer service, great company and great technicians! They did an amazing job on our garage door replacement and we couldn't be happier! The installation was quick and they cleaned up everything afterward.",
+    description: "Tolbert has been excellent in repairing and installing my garage door and motor. They are quick and super professional.",
     service: "New Door Installation",
     videoId: "testimonial-video-4",
     hasVideo: false,
   },
   {
     id: 5,
-    name: "Nick Dassow",
+    name: "Mechelle Williams",
     location: "McKinney, TX",
+    image: "/testimonials/Mechelle Williams review to tolbert garage door repair.jpg",
     rating: 5,
     date: "4 months ago",
-    description: "Colby came out and had our broken torsion spring replaced in no time. Great customer service and upfront pricing! We definitely will be using Tolbert for all our future garage door needs. Thanks again!",
+    description: "Tech. Kevin was a Blessing today! Respectual, professional, couterious, thorough and above all patient. Very informative and I'll continue to recommend you guys to EVERYONE! Your #1 - FCF Mechelle",
     service: "Spring Replacement",
     videoId: "testimonial-video-5",
     hasVideo: false,
   },
   {
     id: 6,
-    name: "Maribel Estrada",
+    name: "Kaylea Bullard",
     location: "Mesquite, TX",
+    image: "/testimonials/Kaylea Bullard review to tolbert garage door repaire.jpg",
     rating: 5,
     date: "4 months ago",
-    description: "Tolbert is the best. After being told by several other companies they couldn't fix the issue with my garage door, Izzy came right out and did a fantastic job at a great price. Izzy was on time, very friendly and honest. He finished the job in less than an hour. I would highly recommend this company and especially this technician.",
+    description: "Had a hiccup this morning and messed up our garage door at 6:00 am called Tolbert overhead at 6:20 and was greeted by a professional individual who assured me they would get us taken care of today. Two gentlemen showed up by 10:00 am to diagnose and send someone back out to fix the issue. All around great service!",
+    service: "Garage Door Repair",
+    videoId: "testimonial-video-6",
+    hasVideo: false,
+  },
+  {
+    id: 7,
+    name: "Buddy Barton",
+    location: "Dallas, TX",
+    image: "/testimonials/Buddy Barton review to    tolbert Garage door repair.jpg",
+    rating: 5,
+    date: "2 years ago",
+    description: "Had a hiccup this morning and messed up our garage door at 6:00 am called Tolbert overhead at 6:20 and was greeted by a professional individual who assured me they would get us taken care of today. Two gentlemen showed up by 10:00 am to diagnose and send someone back out to fix the issue. All around great service!",
     service: "Garage Door Repair",
     videoId: "testimonial-video-6",
     hasVideo: false,
@@ -130,7 +144,7 @@ export default function TestimonialShowcase() {
           <p className="max-w-2xl mx-auto text-gray-600">Don't just take our word for it. Here's what our satisfied customers have to say about our services.</p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Testimonial cards */}
           <div className="grid md:grid-cols-3 gap-6">
             {currentTestimonials.map((testimonial) => (
@@ -141,7 +155,10 @@ export default function TestimonialShowcase() {
                     <iframe src={`https://www.youtube.com/embed/${testimonial.videoId}?autoplay=1`} title={`Testimonial from ${testimonial.name}`} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   ) : (
                     <>
-                      <Image src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
+                      {/* <Image src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} width={800} height={400} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" /> */}
+                      <div className="overflow-hidden relative group h-[400px] w-full">
+                        <Image src={testimonial.image || "/placeholder.svg"} alt={testimonial.name} width={800} height={400} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover h-full w-full transform group-hover:scale-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out " />
+                      </div>
 
                       {testimonial.hasVideo && (
                         <button onClick={() => handlePlayVideo(testimonial.id)} className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors">
@@ -210,8 +227,8 @@ export default function TestimonialShowcase() {
 
           <div className="text-center mt-12">
             <Button asChild variant="outline" className="border-[#32750a] text-[#32750a] hover:bg-[#32750a]/10">
-              <a href="https://www.google.com/maps/place/Tolbert+Garage+Door+Repair/@32.9311534,-96.8947153,17z/data=!4m8!3m7!1s0x864c2b1b0a9c82c3:0x5b1c3b1f96c5b4a!8m2!3d32.9311534!4d-96.8947153!9m1!1b1!16s%2Fg%2F11h_6zk2c3?entry=ttu" target="_blank" rel="noopener noreferrer">
-                Read All 120+ Google Reviews
+              <a href="https://www.google.com/maps/place/Tolbert+Garage+Door+Repair/@32.8079995,-96.66,17z/data=!3m1!4b1!4m6!3m5!1s0x864ea8858afec6c7:0x7a1550c0ac0a304!8m2!3d32.807995!4d-96.6574251!16s%2Fg%2F11c81f5p0h?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                Read All 1040+ Google Reviews
               </a>
             </Button>
           </div>
