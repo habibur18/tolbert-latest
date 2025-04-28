@@ -74,9 +74,9 @@ export const metadata = {
 };
 
 const partners = [
-  { name: "Clopay", logo: "/Logo-clopay.png" },
+  { name: "Clopay", logo: "/brands/doorlink-logo.webp" },
   { name: "LiftMaster", logo: "/LiftMaster.png" },
-  { name: "Amarr", logo: "/Amarr.png" },
+  { name: "Amarr", logo: "/brands/Windsor Door.jpg" },
   { name: "Genie", logo: "/Craftsman-Logo.png" },
   { name: "Wayne Dalton", logo: "/Raynor.png" },
 ];
@@ -108,20 +108,22 @@ export default function Home() {
       {/* Trust signals to build immediate credibility */}
       <TrustSignals />
 
+      {/* Partner logos */}
+      <div className="pt-4 border-t border-gray-100">
+        <p className="text-center text-xs text-gray-500 uppercase tracking-wider mb-4">Authorized Dealer For</p>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          {partners.map((partner, i) => (
+            <div key={i} className=" transition-all duration-300">
+              <Image src={partner.logo || "/placeholder.svg"} alt={`${partner.name} - Authorized Dealer`} width={150} height={80} className="w-auto h-16 object-contain" />
+            </div>
+          ))}
+        </div>
+      </div>
+
       <main>
         {/* Service categories with pricing */}
         <ServiceCategories />
-        {/* Partner logos */}
-        <div className="pt-4 border-t border-gray-100">
-          <p className="text-center text-xs text-gray-500 uppercase tracking-wider mb-4">Authorized Dealer For</p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {partners.map((partner, i) => (
-              <div key={i} className=" transition-all duration-300">
-                <Image src={partner.logo || "/placeholder.svg"} alt={`${partner.name} - Authorized Dealer`} width={150} height={80} className="w-auto h-16 object-contain" />
-              </div>
-            ))}
-          </div>
-        </div>
+
         {/* Emergency services section */}
         <EmergencyServices />
 

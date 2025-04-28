@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { AlertTriangle, ArrowRight, Building2, CheckCircle, DoorClosed, Settings, PenToolIcon as Tool, Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AllServicesGrid from "../all-services-grid";
 
 const services = [
   {
@@ -190,7 +191,7 @@ export default function ServiceCategories() {
         </Tabs>
 
         {/* Product categories grid for SEO */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 hidden">
           {services.map((service) => (
             <Link key={service.id} href={`/services/${service.id}`} className="bg-white rounded-lg p-4 text-center border border-gray-200 hover:border-[#32750a] hover:shadow-md transition-all">
               <div className="mx-auto w-12 h-12 rounded-full bg-[#32750a]/10 flex items-center justify-center mb-3">{service.icon}</div>
@@ -210,6 +211,7 @@ export default function ServiceCategories() {
             <h3 className="font-medium text-gray-900">Emergency Service</h3>
           </Link>
         </div>
+        <AllServicesGrid />
       </div>
     </section>
   );
