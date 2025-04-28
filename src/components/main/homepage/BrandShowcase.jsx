@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 const brands = [
-  { name: "Clopay", logo: "/clopay-logo.svg" },
-  { name: "LiftMaster", logo: "/liftmaster-logo.svg" },
-  { name: "Amarr", logo: "/amarr-logo.svg" },
-  { name: "Genie", logo: "/genie-logo.svg" },
-  { name: "Wayne Dalton", logo: "/wayne-dalton-logo.svg" },
-  { name: "C.H.I.", logo: "/chi-logo.svg" },
-  { name: "Chamberlain", logo: "/chamberlain-logo.svg" },
-  { name: "Raynor", logo: "/raynor-logo.svg" },
+  { name: "Clopay", logo: "/WR.png" },
+  { name: "Amarr", logo: "/marantec-logo.png" },
+  { name: "LiftMaster", logo: "/LiftMaster.png" },
+  { name: "DoorLink", logo: "/brands/doorlink-logo.webp" },
+  { name: "Wayne Dalton", logo: "/brands/Windsor Door.jpg" },
+  { name: "C.H.I.", logo: "/Stanley.png" },
+  { name: "Chamberlain", logo: "/Amarr.png" },
+  { name: "Raynor", logo: "/Raynor.png" },
 ];
 
 export default function BrandShowcase() {
@@ -22,8 +22,8 @@ export default function BrandShowcase() {
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {brands.map((brand, index) => (
-            <div key={index} className="grayscale hover:grayscale-0 transition-all duration-300">
-              <Image src={brand.logo || "/placeholder.svg"} alt={`${brand.name} - Authorized Dealer`} width={120} height={60} className="h-12 w-auto object-contain" />
+            <div key={index}>
+              <Image src={brand.logo || "/placeholder.svg"} alt={`${brand.name} - Authorized Dealer`} width={120} height={80} className="h-12 w-auto object-contain" />
             </div>
           ))}
         </div>

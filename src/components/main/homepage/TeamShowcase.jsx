@@ -177,7 +177,7 @@ const teamMembers = [
     },
     stats: {
       experience: "20+ years",
-      projects: "1,000+",
+      projects: "5,000+",
       rating: "5.0",
     },
   },
