@@ -194,7 +194,7 @@ const teamMembers = [
     stats: {
       experience: "12+ years",
       projects: "850+",
-      rating: "4.9",
+      rating: "5",
     },
   },
   {
@@ -282,10 +282,10 @@ export default function TeamShowcase() {
             <div key={index} className="group bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               {/* Image container with overlay animation */}
               <div className="relative h-72 overflow-hidden group rounded-xl">
-                <Image src={member.image || "/placeholder.svg"} alt={`${member.name} - ${member.role} at Tolbert Garage Door`} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className="object-cover object-top group-hover:object-center transition-all duration-700 ease-in-out scale-110 group-hover:scale-100" />
+                <Image src={member.image || "/placeholder.svg"} alt={`${member.name} - ${member.role} at Tolbert Garage Door`} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw" className={`object-cover object-top transition-all duration-700 ease-in-out ${member.name === "Habibur Rahman" ? "scale-120 group-hover:scale-100 !object-center" : "group-hover:object-center group-hover:scale-100"}`} />
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4">
                   <h3 className="text-white text-xl font-bold">{member.name}</h3>
                   <p className="text-white/90">{member.role}</p>
                 </div>
