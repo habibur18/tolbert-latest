@@ -32,7 +32,7 @@ export const metadata = {
     canonical: "https://tolbertgaragedoor.com",
   },
   openGraph: {
-    title: "Tolbert Garage Door Repair | Fast, Affordable Service in DFW",
+    title: "Tolbert Garage Door Repair | Fast, Affordable Garage Door Service in DFW",
     description: "24/7 emergency garage door repair in Dallas-Fort Worth. Expert technicians, same-day service, and the best warranties in the industry. Call (469)-909-0956 for immediate assistance!",
     url: "https://tolbertgaragedoor.com",
     siteName: "Tolbert Garage Door",

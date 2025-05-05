@@ -8,7 +8,7 @@ import { ArrowRight, Check, Clock, Shield, ThumbsUp, PenToolIcon as Tool } from 
 import Image from "next/image";
 
 export const metadata = {
-  title: "Professional Garage Door Installation Services | Fast & Affordable | Tolbert Garage Door",
+  title: "Professional Garage Door Installation Services | Fast & Affordable | Tolbert Garage Door in DFW",
   description: "Expert garage door installation in Dallas, TX, maintenance, and repair services. Licensed and insured professionals, 100% satisfaction guaranteed. Get your free quote today!",
   keywords: "garage door installation, garage door repair, door maintenance, panel replacement, spring replacement, hardware parts, tolbert garage door repair",
   icons: "/Tolbert Garage Door Logo.png",
@@ -129,7 +129,7 @@ export default function GarageDoorInstallation() {
               </Button>
             </div>
             <div className="md:w-1/2">
-              <img src="/Tolbert and his team.jpg" alt="Professional garage door installation" className="rounded-lg shadow-xl w-full h-auto object-cover" />
+              <Image src="/Tolbert and his team.jpg" width={500} height={500} alt="Professional garage door installation" className="rounded-lg shadow-xl w-full h-auto object-cover" />
             </div>
           </div>
 
